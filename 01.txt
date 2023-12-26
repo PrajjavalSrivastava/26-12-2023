@@ -1,0 +1,36 @@
+26-12-2023
+#include<bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age = 56;
+    
+    //calculate total_days,weeks and months_left
+    int total_days = 90 * 365;
+    int total_weeks = 90 * 52;
+    int total_months = 90 * 12;
+    
+    //cout<<total_days<<" "<<total_weeks<<" "<<total_months<<endl;
+    
+    //Calculate lived_days,weeks and months_left
+    
+    int lived_days = age * 365;
+    int lived_weeks = age * 52;
+    int lived_months = age * 12;
+    
+    int days_left = total_days - lived_days;
+    int weeks_left = total_weeks - lived_weeks;
+    int months_left = total_months - lived_months; 
+    
+    
+    cout<<"Days left "<<days_left<<" Weeks left "<<weeks_left<<" Months left "<<months_left<<endl;
+    
+    // days_left = total_days - lived_days;
+    // weeks_left = total_weeks - lived_weeks;
+    // months_left = total_months - lived_months;
+
+    return 0;
+}
